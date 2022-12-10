@@ -1,5 +1,6 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Ing. Josué Acuña";
+    DateTime hoy = DateTime.Now;
 }
 
 <div class="text-center">
@@ -8,3 +9,19 @@
 
     <img id="foto" src="~/imagenes/foto.jpg" alt="Foto de Josué Acuña" />
 </div>
+
+<div class="text-center">
+    <img id="imagen-dotnet" src="~/imagenes/dotnetimagen2.png" alt="dotnet logo" />
+</div>
+
+<div class="row justify-content-center text-center bg-primary">
+    <div class="col col-md-7 seccion-bienvenida">
+        <h1>Te doy la bienvenida a mi portafolio</h1>
+        <p>He estado desarrollando software desde 2010. Me he desempeñado como desarrollador de aplicaciones
+            de escritorio y web con tecnologías .NET para el INETER, especificamente para la Dirección General
+            de Catastro Físico en el marco del <b>Proyecto de Ordenamiendo de la Propiedad (PRODEP II y PRODEP III)</b>
+            haciendo uso de bases de datos PostgreSQL, SQL Server, SQLite.
+        </p>
+    </div>
+</div>
+<footer><b><i>@hoy.ToString("dd/MM/yyyy hh:mm:ss tt")</i></b></footer>
